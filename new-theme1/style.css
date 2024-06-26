@@ -1,0 +1,159 @@
+/*
+Theme Name: New Theme1
+Author: Harshit Bhorga
+Author URI: https://wordpress.org/
+Description: Built by harshit bhorga on a solidly designed foundation, Twenty Twenty-Two embraces the idea that everyone deserves a truly unique website. The theme’s subtle styles are inspired by the diversity and versatility of birds: its typography is lightweight yet strong, its color palette is drawn from nature, and its layout elements sit gently on the page. The true richness of Twenty Twenty-Two lies in its opportunity for customization. The theme is built to take advantage of the Site Editor features introduced in WordPress 5.9, which means that colors, typography, and the layout of every single page on your site can be customized to suit your vision. It also includes dozens of block patterns, opening the door to a wide range of professionally designed layouts in just a few clicks. Whether you’re building a single-page website, a blog, a business website, or a portfolio, Twenty Twenty-Two will help you create a site that is uniquely yours.
+Requires PHP: 5.6
+Version: 1.7
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwentytwo
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, style-variations, wide-blocks, block-styles, accessibility-ready, blog, portfolio, news
+
+Twenty Twenty-Two WordPress Theme, (C) 2021 WordPress.org
+Twenty Twenty-Two is distributed under the terms of the GNU GPL.
+*/
+
+/*
+ * Font smoothing.
+ * This is a niche setting that will not be available via Global Styles.
+ * https://github.com/WordPress/gutenberg/issues/35934
+ */
+
+ body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+  font-family: "Poppins", Sans-serif;
+
+}
+
+/*
+ * Text and navigation link styles.
+ * Necessary until the following issue is resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/27075
+ */
+
+a {
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.25ch;
+}
+
+a:hover,
+a:focus {
+	text-decoration-style: dashed;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+.wp-block-navigation .wp-block-navigation-item a:hover,
+.wp-block-navigation .wp-block-navigation-item a:focus {
+	text-decoration: underline;
+	text-decoration-style: solid;
+}
+
+
+.heading{
+  color: #000;
+  font-family: "Poppins", Sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+*{
+  border: 1px solid green;
+}
+
+.offerends{
+  padding: 07px 0 03px 0;
+  background-color: #FF8032;
+  border-radius: 10px 10px 0 0;
+}
+
+.boxx{
+  color: #FF8032;
+  font-family: "Sora", Sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 4rem;
+  padding: 0 .5rem;
+}
+
+
+@keyframes side-to-side {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+}
+
+@keyframes gradient-move {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.flashy-button {
+  animation: side-to-side 1s infinite ease-in-out, gradient-move 3s infinite linear;
+  background: linear-gradient(270deg, #ff7e5f, #feb47b);
+  background-size: 200% 200%;
+  box-shadow: 0 4px 14px 0 rgba(255, 165, 0, 0.4);
+}
+
+.dottedBack{
+  background: url('https://masterclass.java7dayschallenge.com/wp-content/uploads/2023/12/Dotted-dots-1920x1080-1920-x-1286-px-1-.png') repeat;
+}
+
+.elementor-8 .elementor-element.elementor-element-3b5e10bb>.elementor-widget-container {
+  padding: 08px 10px 08px 12px;
+  background-color: #FFF;
+  border-radius: 8px 8px 8px 8px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .5);
+}
+.elementor-widget-icon-box.elementor-position-left .elementor-icon-box-wrapper {
+  text-align: left;
+  flex-direction: row;
+}
+
+.elementor-widget-icon-box.elementor-position-left .elementor-icon-box-wrapper, .elementor-widget-icon-box.elementor-position-right .elementor-icon-box-wrapper {
+  display: flex;
+}
+.elementor-widget-icon-box.elementor-position-left .elementor-icon-box-icon {
+  margin-right: var(11px, 15px);
+  margin-left: 0;
+  margin-bottom: unset;
+}
+
+.elementor-8 .elementor-element.elementor-element-3b5e10bb.elementor-view-stacked .elementor-icon {
+  background-color: #FF8032;
+}
+
+.elementor-8 .elementor-element.elementor-element-3b5e10bb .elementor-icon {
+  font-size: 24px;
+}
